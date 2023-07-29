@@ -1,0 +1,42 @@
+@media screen and (max-width: 767px) {
+  .titulo-banner {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .paragraph {
+    max-width: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .paragraph > p {
+    font-size: 14px;
+  }
+  .logo {
+    text-align: center;
+    margin: 0;
+    text-indent: inherit;
+  }
+
+  /* pagina 2 */
+}
+
+@media screen and (max-width: 576px) {
+  .copy-texto {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .copy-texto:nth-child(1)::after,
+  .copy-texto:nth-child(2)::after,
+  .copy-texto:nth-child(3)::after {
+    right: -2.5px;
+  }
+  .copy-texto,
+  .p-copy {
+    font-size: 8px;
+  }
+
+  /* pagina 2 */
+}

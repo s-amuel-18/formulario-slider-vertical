@@ -1,48 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- * swiper js -->
-    <link rel="stylesheet" href="./assets/lib/swiperjs/swiper.min.css">
+    <link rel="stylesheet" href="./assets/lib/swiperjs/swiper.min.css" />
 
     <!-- * bootstrap 5 -->
-    <link rel="stylesheet" href="./assets/lib/bootstrap-5/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/lib/bootstrap-5/bootstrap.min.css" />
 
     <!-- * main style -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="logo">
+            <!-- <svg style="width: 150px" class="icon icon-sunrun-logo">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#icon-sunrun-logo"
+              ></use>
+            </svg> -->
+
+            <h4>
+              <a href="#">LOGO</a>
+            </h4>
+          </div>
+
+          <div class="content-info">
+            <h1 class="titulo-banner">
+              Take Control With Sunrun.
+              <br />
+              Choose Where Your Power Comes From!
+            </h1>
+
+            <div class="paragraph">
+              <p>
+                Join the 630K+ Sunrun customers and experience the power of the
+                sun! Click below to see if solar works for you!
+              </p>
+            </div>
+
+            <div class="for-code">
+              <form action="">
+                <input
+                  type="tel"
+                  class="form-control search mx-auto"
+                  value=""
+                  placeholder="Enter Your Zip Code"
+                  name="zip"
+                  maxlength="5"
+                />
+
+                <button id="submit-adress" class="btn btn-submit">
+                  Calculate Your Savings
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="text-copy">
+            <span class="d-block p-copy">
+              © 2023 Sunrun. All rights reserved.
+            </span>
+
+            <small class="d-block">
+              <a href="#" class="text-white text-decoration-none copy-texto">
+                2023 Sunrun. All rights reserved.</a
+              >
+              <a href="#" class="text-white text-decoration-none copy-texto">
+                Privacy Policy.</a
+              >
+              <a href="#" class="text-white text-decoration-none copy-texto">
+                Do Not Sell My Info</a
+              >
+              <a href="#" class="text-white text-decoration-none copy-texto">
+                Terms</a
+              >
+            </small>
+          </div>
         </div>
-        <div class="swiper-pagination"></div>
+
+        <div class="swiper-slide">
+          <div class="text-copy">
+            <span class="d-block p-copy">
+              © 2023 Sunrun. All rights reserved.
+            </span>
+
+            <small class="d-block">
+              <a href="#" class="text-white text-decoration-none copy-texto">
+                2023 Sunrun. All rights reserved.</a
+              >
+              <a href="#" class="text-white text-decoration-none copy-texto">
+                Privacy Policy.</a
+              >
+              <a href="#" class="text-white text-decoration-none copy-texto">
+                Do Not Sell My Info</a
+              >
+              <a href="#" class="text-white text-decoration-none copy-texto">
+                Terms</a
+              >
+            </small>
+          </div>
+        </div>
+
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
+  </body>
 
-</body>
+  <!-- * swiper js -->
+  <script src="./assets/lib/swiperjs/swiper.min.js"></script>
 
-<!-- * swiper js -->
-<script src="./assets/lib/swiperjs/swiper.min.js"></script>
+  <!-- * bootstrap 5 -->
+  <script src="./assets/lib/bootstrap-5/bootstrap.min.js"></script>
 
-<!-- * <!-- * bootstrap 5 --> -->
-<script src="./assets/lib/bootstrap-5/bootstrap.min.js"></script>
-
-<!-- * main script -->
-<script src="./assets/js/app.js"></script>
-
+  <!-- * main script -->
+  <script src="./assets/js/app.js"></script>
 </html>

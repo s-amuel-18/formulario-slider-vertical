@@ -1,47 +1,199 @@
 html,
 body {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  margin: 0;
 }
 
 .swiper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.swiper-slide:nth-child(1) {
+  background-image: url(../image/fondo-principal.jpg);
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
 }
 
 .swiper-slide:nth-child(2) {
-    background: blue;
+  background-color: #203447;
+  align-items: end;
 }
 
 .swiper-slide:nth-child(3) {
-    background: black;
+  background: black;
 }
 
 .swiper-slide:nth-child(4) {
-    background: white;
+  background: white;
 }
 
 .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* svg */ /* *componentes */
+.logo {
+  margin-top: 50px;
+  width: 100%;
+  height: fit-content;
+  text-align: left;
+  text-indent: 70px;
+}
+.logo > h4 > a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  font-size: 33px;
+  fill: currentColor;
+  background-color: red;
+}
+.icon-sunrun-logo {
+  padding: 0px;
+  width: 200px !important;
+  margin-top: 23px;
+  fill: #fff !important;
+}
+
+.titulo-banner {
+  color: white;
+  font-weight: 800;
+  line-height: 1;
+  font-family: "Untitled Serif";
+  font-size: 43.86px;
+}
+
+/* form banner */
+.for-code,
+form {
+  display: block;
+}
+
+.search {
+  max-width: 290px;
+  height: 57px;
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 18px;
+  font-family: "Untitled Sans";
+  text-align: center;
+  font-weight: bold;
+}
+
+.paragraph {
+  margin-bottom: 60px;
+  max-width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.paragraph > p {
+  font-size: 25px;
+  color: #fff;
+  margin: 0;
+}
+
+.btn-submit {
+  cursor: pointer;
+  background-color: #00b085;
+  color: #ffffff;
+  padding: 15px;
+  border: 0px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Untitled Sans";
+  border-radius: 100px;
+  width: 100%;
+  max-width: 290px;
+  margin: 0 auto;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #157245;
+  color: white;
+}
+
+.search:focus {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+.copy-texto {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 10px;
+}
+
+.copy-texto:nth-child(1)::after,
+.copy-texto:nth-child(2)::after,
+.copy-texto:nth-child(3)::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  right: -0.5px;
+  bottom: 0;
+
+  border-right: 2px solid white;
+}
+
+.p-copy {
+  color: #c0c0c0;
+  text-align: center;
+  font-size: 10px;
+}
+/* *Pagina 2 componentes */
+
+/**text color  */
+.text-black {
+  color: #000;
 }
