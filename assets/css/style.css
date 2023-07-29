@@ -60,7 +60,10 @@ h5 {
 }
 
 .swiper-slide:nth-child(3) {
-  background: black;
+  padding-top: 150px;
+  background-color: #203447;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .swiper-slide:nth-child(4) {
@@ -234,7 +237,7 @@ form {
   left: 50px;
 }
 .info {
-  max-width: 581px;
+  max-width: 865px;
   margin-top: 20px;
   font-size: 54px;
   font-family: serif;
@@ -279,7 +282,71 @@ svg > g > path {
   font-size: 19px;
 }
 
+/* *º3 */
+
+.sub-info {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.form-ranger {
+  margin-top: 50px;
+  max-width: 600px;
+}
+
+.ranger {
+  margin: auto;
+  max-width: 570px;
+  height: 78px;
+
+  display: flex;
+  align-items: center;
+}
+
+.num-ranger {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.initial-num,
+.last-num {
+  position: relative;
+  color: white;
+  font-size: 25px;
+  font-family: "Untitled Sans";
+  font-weight: bolder;
+}
+
+.initial-num::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  height: 30px;
+  left: 20px;
+  width: 3px;
+  background-color: white;
+}
+
+.last-num:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  height: 30px;
+  right: 20px;
+  width: 3px;
+  background-color: white;
+}
+
 /**text color  */
 .text-black {
   color: #000;
+}
+
+/* *max-width */
+.max-120 {
+  max-width: 120px;
 }

@@ -22,7 +22,7 @@
   /* º2 */
 
   .info {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .yes-no {
@@ -34,7 +34,10 @@
     height: 100px;
   }
 
-  /* pagina 2 */
+  /* pagina 3 */
+  .sub-info {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -70,5 +73,10 @@
   svg {
     width: 100px;
     height: 80px;
+  }
+
+  /*º3 */
+  .swiper-slide:nth-child(3) {
+    padding-top: 100px;
   }
 }
