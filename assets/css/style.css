@@ -51,10 +51,12 @@ h5 {
 }
 
 .swiper-slide:nth-child(2) {
+  overflow-y: scroll;
   padding-top: 150px;
   background-color: #203447;
   justify-content: space-between;
   flex-direction: column;
+  gap: 50px;
 }
 
 .swiper-slide:nth-child(3) {
@@ -194,6 +196,9 @@ form {
   font-size: 10px;
 }
 /* *Pagina 2 componentes */
+.main-part {
+  margin-bottom: 70px;
+}
 .num {
   position: relative;
   font-size: 26px;
@@ -227,6 +232,51 @@ form {
   background-color: #fff;
   top: 16px;
   left: 50px;
+}
+.info {
+  max-width: 581px;
+  margin-top: 20px;
+  font-size: 54px;
+  font-family: serif;
+  letter-spacing: 1px;
+}
+
+.yes-no {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 60px;
+}
+.check-icon,
+.x-icon {
+  max-width: 170px;
+  max-height: 150px;
+  cursor: pointer;
+  display: block;
+}
+
+.icon-color {
+  object-fit: contain !important;
+  color: white;
+  transition: 0.2s all;
+}
+
+svg > g > path {
+  transition: 0.3s all;
+}
+
+.check-icon:hover > svg > g > path {
+  fill: #64a729;
+}
+
+.x-icon:hover > svg > g > path {
+  fill: #ca272b;
+}
+
+.text-questions {
+  margin-top: 10px;
+  font-size: 19px;
 }
 
 /**text color  */
