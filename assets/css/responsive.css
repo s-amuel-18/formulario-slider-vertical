@@ -38,6 +38,29 @@
   .sub-info {
     font-size: 17px;
   }
+  /* 4 */
+  /* clases */
+  .h-md-55 {
+    height: 55px;
+  }
+
+  .fs-md-18 {
+    font-size: 18px;
+  }
+
+  .w-md-100 {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  /* 3 */
+  .initial-num::before {
+    left: 0;
+  }
+  .last-num::before {
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -60,6 +83,7 @@
   .swiper-slide:nth-child(2) {
     padding-top: 100px;
     gap: 0;
+    justify-content: space-between;
   }
   .info {
     font-size: 24px;
@@ -78,5 +102,15 @@
   /*º3 */
   .swiper-slide:nth-child(3) {
     padding-top: 100px;
+    justify-content: space-between;
+  }
+
+  /* 4 */
+  .swiper-slide:nth-child(4) {
+    padding-top: 100px;
+    justify-content: space-between;
+  }
+  .fs-sm-50 {
+    font-size: 50px;
   }
 }

@@ -51,23 +51,43 @@ h5 {
 }
 
 .swiper-slide:nth-child(2) {
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-top: 150px;
   background-color: #203447;
-  justify-content: space-between;
+  justify-content: start;
   flex-direction: column;
   gap: 50px;
 }
 
 .swiper-slide:nth-child(3) {
-  padding-top: 150px;
+  padding-top: 140px;
   background-color: #203447;
-  justify-content: space-between;
+  justify-content: start;
   flex-direction: column;
 }
 
 .swiper-slide:nth-child(4) {
-  background: white;
+  overflow-y: auto;
+  padding-top: 70px;
+  background-color: #203447;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.swiper-slide:nth-child(5) {
+  overflow: auto;
+  padding-top: 100px;
+  background-color: #203447;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.swiper-slide:nth-child(6) {
+  overflow: auto;
+  padding-top: 100px;
+  background-color: #203447;
+  justify-content: start;
+  flex-direction: column;
 }
 
 .swiper-slide img {
@@ -128,6 +148,7 @@ form {
   font-family: "Untitled Sans";
   text-align: center;
   font-weight: bold;
+  border: 2px solid #cccccc;
 }
 
 .paragraph {
@@ -170,7 +191,11 @@ form {
 .search:focus {
   box-shadow: none;
   outline: none;
-  border: none;
+  border: 2px solid #cccccc;
+}
+
+.text-copy {
+  padding-bottom: 5px;
 }
 
 .copy-texto {
@@ -237,7 +262,7 @@ form {
   left: 50px;
 }
 .info {
-  max-width: 865px;
+  max-width: 900px;
   margin-top: 20px;
   font-size: 54px;
   font-family: serif;
@@ -340,6 +365,11 @@ svg > g > path {
   width: 3px;
   background-color: white;
 }
+/* *06 */
+.input-check-phone {
+  font-size: 11px;
+  /* font-family: "Untitled Sans"; */
+}
 
 /**text color  */
 .text-black {
@@ -349,4 +379,43 @@ svg > g > path {
 /* *max-width */
 .max-120 {
   max-width: 120px;
+}
+.max-250 {
+  max-width: 250px;
+}
+
+.max-550 {
+  max-width: 550px;
+}
+
+.max-unset {
+  max-width: unset;
+}
+
+.h-70px {
+  height: 71px;
+}
+
+/* *margin */
+.mt-nev-45 {
+  margin-top: -45px;
+}
+
+/* *transfor */
+/* ?rotate */
+.tr-rotate-20 {
+  transform: rotate(20deg);
+}
+
+.tr-rotate-360 {
+  transform: rotate(360deg);
+}
+
+/* *font-size */
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-10px {
+  font-size: 10px;
 }

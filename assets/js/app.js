@@ -1,7 +1,7 @@
 // * Configuración swiper js
 var swiper = new Swiper(".mySwiper", {
   direction: "vertical",
-  initialSlide: 2,
+  initialSlide: 5,
   //   allowTouchMove: false,
   pagination: {
     el: ".swiper-pagination",
