@@ -100,7 +100,8 @@ h5 {
   text-indent: 70px;
 }
 
-/* svg */ /* *componentes */
+/* svg */
+/* *componentes */
 .logo {
   margin-top: 50px;
   width: 100%;
@@ -108,11 +109,13 @@ h5 {
   text-align: left;
   /* text-indent: 70px; */
 }
-.logo > h4 > a {
+
+.logo>h4>a {
   text-decoration: none;
   font-size: 30px;
   color: white;
 }
+
 .icon {
   display: inline-block;
   width: 1em;
@@ -121,12 +124,14 @@ h5 {
   fill: currentColor;
   background-color: red;
 }
+
 .icon-sunrun-logo {
   padding: 0px;
   width: 200px !important;
   margin-top: 23px;
   fill: #fff !important;
 }
+
 .titulo-banner {
   color: white;
   font-weight: 800;
@@ -161,7 +166,7 @@ form {
   margin-top: 40px;
 }
 
-.paragraph > p {
+.paragraph>p {
   font-size: 25px;
   color: #fff;
   margin: 0;
@@ -225,10 +230,12 @@ form {
   text-align: center;
   font-size: 10px;
 }
+
 /* *Pagina 2 componentes */
 .main-part {
   margin-bottom: 70px;
 }
+
 .num {
   position: relative;
   font-size: 26px;
@@ -263,6 +270,7 @@ form {
   top: 16px;
   left: 50px;
 }
+
 .info {
   max-width: 900px;
   margin-top: 20px;
@@ -278,6 +286,7 @@ form {
   align-items: baseline;
   gap: 60px;
 }
+
 .check-icon,
 .x-icon {
   max-width: 170px;
@@ -292,15 +301,15 @@ form {
   transition: 0.2s all;
 }
 
-svg > g > path {
+svg>g>path {
   transition: 0.3s all;
 }
 
-.check-icon:hover > svg > g > path {
+.check-icon:hover>svg>g>path {
   fill: #64a729;
 }
 
-.x-icon:hover > svg > g > path {
+.x-icon:hover>svg>g>path {
   fill: #ca272b;
 }
 
@@ -368,6 +377,7 @@ svg > g > path {
   width: 3px;
   background-color: white;
 }
+
 /* *06 */
 .input-check-phone {
   font-size: 11px;
@@ -376,6 +386,7 @@ svg > g > path {
 
 /*  */
 .btn-fixed-home {
+  cursor: pointer;
   display: block;
   display: grid;
   place-items: center;
@@ -408,6 +419,7 @@ svg > g > path {
 .max-120 {
   max-width: 120px;
 }
+
 .max-250 {
   max-width: 250px;
 }
