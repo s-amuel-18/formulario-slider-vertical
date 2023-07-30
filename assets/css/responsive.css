@@ -39,6 +39,14 @@
     font-size: 17px;
   }
   /* 4 */
+  /* 6 */
+  .min-title {
+    font-size: 25px;
+  }
+
+  .note {
+    font-size: 17px;
+  }
   /* clases */
   .h-md-55 {
     height: 55px;
@@ -112,5 +120,15 @@
   }
   .fs-sm-50 {
     font-size: 50px;
+  }
+
+  .title-banner {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .w-xl-140p {
+    width: 140px;
   }
 }
