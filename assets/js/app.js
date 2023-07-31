@@ -3,7 +3,7 @@ $("[data-mask]").inputmask();
 // * Configuración swiper js
 const swiperSlide = new Swiper(".mySwiper", {
   direction: "vertical",
-  initialSlide: 4,
+  // initialSlide: 0,
   speed: 800,
   allowTouchMove: false,
 });
@@ -25,7 +25,9 @@ function prevSlide() {
     const valueZipCode = inputZipCode.value;
 
     if (!isValidZipCode(valueZipCode)) {
-      alert("No es valido el \n\n - dasdsad");
+      alert(
+        "Please correct the following errors: \n\n  -Please enter your zip code"
+      );
       return null;
     }
 
@@ -43,7 +45,9 @@ function prevSlide() {
     const valueEmailAddress = inputEmailAddress.value;
 
     if (!validator.isEmail(valueEmailAddress)) {
-      alert("No es valido el email \n\n - dasdsad");
+      alert(
+        "Please correct the following errors: \n\n -Please enter your email address"
+      );
       return null;
     }
 
@@ -58,7 +62,9 @@ function prevSlide() {
 
   btnSubmit.addEventListener("click", function (e) {
     if (!$(inputEmailAddress).inputmask("isComplete")) {
-      alert("No es valido el email \n\n - dasdsad");
+      alert(
+        "Please correct the following errors: \n\n - Please enter your phone number"
+      );
       return null;
     }
 
@@ -80,7 +86,9 @@ function prevSlide() {
     // alert(valueLasName);
 
     if (valueLasName.length == 0 || valueFirsName.length == 0) {
-      alert(" Please enter your first name \n\n Please enter your last name ");
+      alert(
+        "Please correct the following errors: \n\n -Please enter your first name \n -Please enter your last name "
+      );
       return null;
     }
 

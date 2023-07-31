@@ -1,0 +1,42 @@
+@font-face {
+  src: url(./Open_Sans/OpenSans-Italic-VariableFont_wdth\wght.ttf);
+  font-style: italic;
+  font-family: "Open Sans";
+  font-weight: 200;
+  font-stretch: 100%;
+}
+@font-face {
+  src: url(./Open_Sans/static/OpenSans-Italic.ttf);
+  font-style: italic;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-stretch: 100%;
+}
+@font-face {
+  src: url(./Open_Sans/static/OpenSans-Medium.ttf);
+  font-style: italic;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-stretch: 100%;
+}
+@font-face {
+  src: url(./Open_Sans/static/OpenSans_Condensed-Regular.ttf);
+  font-style: italic;
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-stretch: 100%;
+}
+@font-face {
+  src: url(./Open_Sans/static/OpenSans_Condensed-SemiBold.ttf);
+  font-style: italic;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-stretch: 100%;
+}
+@font-face {
+  src: url(./Open_Sans/static/OpenSans_Condensed-Bold.ttf);
+  font-style: italic;
+  font-family: "Open Sans";
+  font-weight: 900;
+  font-stretch: 100%;
+}
