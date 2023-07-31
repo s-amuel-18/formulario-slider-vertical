@@ -68,7 +68,7 @@ function prevSlide() {
       return null;
     }
 
-    nextSlide();
+    window.location.href = "./informacion-validada.html";
   });
 })();
 
