@@ -3,7 +3,7 @@ $("[data-mask]").inputmask();
 // * Configuración swiper js
 const swiperSlide = new Swiper(".mySwiper", {
   direction: "vertical",
-  initialSlide: 2,
+  // initialSlide: 2,
   speed: 800,
   allowTouchMove: false,
 });
