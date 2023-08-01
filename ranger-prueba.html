@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+    :root {
+      --gradient-color: linear-gradient(95deg, #6c00ff -7%, #0dbeff 112%);
+      --first-color-light: #111322;
+      --first-color-lighten: #c6c6c6;
+      --white-color: #ffffff;
+      --body-font: "Montserrat", sans-serif;
+      --h1-font-size: 1.5rem;
+    }
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: var(--body-font);
+      background: linear-gradient(135deg, #292e53, #181b30);
+    }
+
+    /*=============== RANGE SLIDER ===============*/
+    .container {
+      height: 100vh;
+      margin-inline: 1.5rem;
+      display: grid;
+      place-items: center;
+    }
+
+    /* Custom input range */
+    .range {
+      height: 64px;
+      width: 100%;
+      max-width: 332px;
+      background-color: var(--first-color-light);
+      border-radius: 4rem;
+      box-shadow: 0 6px 16px #0a0c1580;
+      padding-inline: 2.5rem;
+      display: grid;
+    }
+
+    .range__content {
+      position: relative;
+      width: 100%;
+      display: grid;
+      place-items: center;
+    }
+
+    .range__slider {
+      width: 100%;
+      height: 16px;
+      background-color: var(--first-color-lighten);
+      border-radius: 4rem;
+      box-shadow: 0 4px 12px #0a0c1580;
+      overflow: hidden;
+    }
+
+    .range__slider-line {
+      width: 0;
+      height: 100%;
+      background: var(--gradient-color);
+    }
+
+    .range__thumb {
+      width: 32px;
+      height: 32px;
+      background-color: var(--first-color-lighten);
+      border-radius: 50%;
+      box-shadow: 0 0 12px #0a0c1580;
+      position: absolute;
+    }
+
+    /* Value input range */
+    .range__value {
+      width: 64px;
+      height: 64px;
+      background: var(--gradient-color);
+      position: absolute;
+      top: -82px;
+      left: -16px;
+      border-radius: 2rem 2rem 2rem 0.25rem;
+      transform: rotate(-45deg);
+      display: grid;
+      place-items: center;
+    }
+
+    .range__value-number {
+      transform: rotate(45deg);
+      color: var(--white-color);
+      font-size: var(--h1-font-size);
+    }
+
+    /* Default input range */
+    .range__input {
+      appearance: none;
+      width: 100%;
+      height: 16px;
+      position: absolute;
+      opacity: 0;
+    }
+
+    .range__input::-webkit-slider-thumb {
+      appearance: none;
+      width: 32px;
+      height: 32px;
+    }
+
+    .range__input::-webkit-slider-thumb:hover {
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="range">
+        <div class="range__content">
+          <div class="range__slider">
+            <div class="range__slider-line" id="range-line"></div>
+          </div>
+
+          <div class="range__thumb" id="range-thumb">
+            <div class="range__value">
+              <span class="range__value-number" id="range-number">50</span>
+            </div>
+          </div>
+
+          <input
+            type="range"
+            class="range__input"
+            id="slider"
+            min="0"
+            max="100"
+            value="50"
+            step="1"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // Get DOM elements
+    const rangeThumb = document.getElementById("range-thumb");
+    const rangeNumber = document.getElementById("range-number");
+    const rangeLine = document.getElementById("range-line");
+    const rangeInput = document.getElementById("slider");
+
+    // Update the value displayed next to the range input
+    const updateRangeValue = () => {
+      rangeNumber.textContent = rangeInput.value;
+    };
+
+    // Update the position of the range thumb and the width of the range line
+    const updateRangeVisuals = () => {
+      const thumbPosition = rangeInput.value / rangeInput.max;
+      const space = rangeInput.offsetWidth - rangeThumb.offsetWidth;
+
+      // Calculate and set the left position of the range thumb
+      rangeThumb.style.left = thumbPosition * space + "px";
+
+      // Set the width of the range line based on the input value
+      rangeLine.style.width = rangeInput.value + "%";
+    };
+
+    // Add event listener to the range input for real-time updates
+    rangeInput.addEventListener("input", () => {
+      updateRangeValue();
+      updateRangeVisuals();
+    });
+
+    // Initialize the range slider
+    const initializeRangeSlider = () => {
+      updateRangeValue();
+      updateRangeVisuals();
+    };
+
+    // Call the initialization function
+    initializeRangeSlider();
+  </script>
+</html>

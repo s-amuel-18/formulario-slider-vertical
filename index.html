@@ -6,9 +6,8 @@
     <title>HOME</title>
 
     <!-- *fuentes -->
-    <link rel="stylesheet" href="./assets/fonts/open_sans.css" />
-    <link rel="stylesheet" href="./assets/fonts/quicksand.css" />
-    <link rel="stylesheet" href="./assets/fonts/lato.css" />
+    <link rel="stylesheet" href="./assets/fonts/league_espartan.css" />
+    <link rel="stylesheet" href="./assets/fonts/aeonik.css" />
     <link rel="stylesheet" href="./assets/fonts/serif-sans.css" />
 
     <!-- * swiper js -->
@@ -32,17 +31,8 @@
       <div class="swiper-wrapper">
         <!-- * primera seccion (zip code) -->
         <div class="swiper-slide">
-          <div class="text-70-left logo">
-            <!-- <svg style="width: 150px" class="icon icon-sunrun-logo">
-              <use
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xlink:href="#icon-sunrun-logo"
-              ></use>
-            </svg> -->
-
-            <h4>
-              <a href="#">LOGO</a>
-            </h4>
+          <div class="logo ms-lg-4 me-lg-auto">
+            <img src="./assets/image/logo-white.png" alt="" class="img-fluid" />
           </div>
 
           <div class="content-info">
@@ -135,7 +125,10 @@
                 <span class="text-questions d-block text-white">Yes</span>
               </div>
 
-              <a href="./no-validacion.html" class="x-icon">
+              <a
+                href="./no-validacion.html"
+                class="x-icon text-decoration-none"
+              >
                 <?xml version="1.0" encoding="utf-8"?>
                 <svg
                   version="1.1"
@@ -204,16 +197,40 @@
 
             <div class="form-ranger mx-auto">
               <!-- <label for="customRange1" class="form-label">Example range</label> -->
-              <div class="ranger">
-                <input
-                  type="range"
-                  class="form-range"
-                  id="customRange1"
-                  min="50"
-                  max="800"
-                  value="425"
-                />
+              <div class="range">
+                <div class="range__content">
+                  <div class="range__slider">
+                    <div class="range__slider-line" id="range-line"></div>
+                  </div>
+
+                  <div class="range__thumb" id="range-thumb">
+                    <div class="range__value">
+                      <span class="range__value-number" id="range-number"
+                        >$425</span
+                      >
+                    </div>
+                  </div>
+
+                  <input
+                    type="range"
+                    class="range__input"
+                    id="slider"
+                    min="0"
+                    max="100"
+                    value="50"
+                    step="1"
+                  />
+                </div>
               </div>
+
+              <!-- <input
+                type="range"
+                class="form-range"
+                id="customRange1"
+                min="50"
+                max="800"
+                value="425"
+              /> -->
 
               <div class="num-ranger">
                 <div class="initial-num">$50</div>
@@ -223,7 +240,7 @@
               <button
                 onclick="nextSlide()"
                 id="btn_ranger_next"
-                class="btn btn-submit max-120 mt-nev-45"
+                class="btn btn-submit max-120 mt-lg-nev-45"
               >
                 Next
               </button>
@@ -260,7 +277,7 @@
 
             <h2 class="info mx-auto text-white fw-bolder">
               Where Can We Send Your Free Solar Quote?
-              <div class="icon-telegram mt-4">
+              <div class="icon-telegram mt-3">
                 <i
                   class="fas fa-paper-plane tr-rotate-20 text-white fa-1x fs-sm-50"
                 ></i>
@@ -396,7 +413,7 @@
 
                 <label
                   for="check-phone"
-                  class="d-block text-white fs-sans fw-light input-check-phone mb-3"
+                  class="d-block text-white fs-league fw-light input-check-phone mb-3"
                 >
                   <input
                     type="checkbox"
@@ -408,7 +425,7 @@
                 </label>
 
                 <small
-                  class="d-block text-grey fs-sans fw-light fs-10px w-50 w-md-100 mx-auto"
+                  class="d-block text-grey fs-league fw-light fs-10px w-50 w-md-100 mx-auto"
                 >
                   By clicking below, I authorize Sunrun to call me and send
                   pre-recorded messages and text messages to me about Sunrun
@@ -419,13 +436,14 @@
                   can opt out anytime. You also agree to our
                 </small>
 
-                <button
+                <a
+                  href="./informacion-validada.html"
                   id="submit-phone-number"
                   type="submit"
                   class="btn btn-submit max-250 mt-4"
                 >
                   Submit ▸
-                </button>
+                </a>
               </div>
             </div>
           </div>

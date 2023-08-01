@@ -36,10 +36,11 @@ h5 {
   display: flex;
   justify-content: center;
   padding: 20px;
+  background-color: #1b223f;
 }
 
 .swiper-slide:nth-child(1) {
-  background-image: url(../image/fondo-principal.jpg);
+  background-image: url(../image/fondo.jpg);
   background-size: cover;
   background-position: center 10%;
   background-repeat: no-repeat;
@@ -51,16 +52,16 @@ h5 {
 
 .swiper-slide:nth-child(2) {
   overflow-y: auto;
-  padding-top: 150px;
-  background-color: #203447;
+  padding-top: 120px;
+  background-color: #1b223f;
   justify-content: start;
   flex-direction: column;
   gap: 50px;
 }
 
 .swiper-slide:nth-child(3) {
-  padding-top: 140px;
-  background-color: #203447;
+  padding-top: 120px;
+  background-color: #1b223f;
   justify-content: start;
   flex-direction: column;
 }
@@ -68,23 +69,20 @@ h5 {
 .swiper-slide:nth-child(4) {
   overflow-y: auto;
   padding-top: 70px;
-  background-color: #203447;
   justify-content: start;
   flex-direction: column;
 }
 
 .swiper-slide:nth-child(5) {
   overflow: auto;
-  padding-top: 100px;
-  background-color: #203447;
+  padding-top: 90px;
   justify-content: start;
   flex-direction: column;
 }
 
 .swiper-slide:nth-child(6) {
   overflow: auto;
-  padding-top: 100px;
-  background-color: #203447;
+  padding-top: 90px;
   justify-content: start;
   flex-direction: column;
 }
@@ -103,8 +101,9 @@ h5 {
 /* svg */
 /* *componentes */
 .logo {
+  width: 200px;
+  height: 33px;
   margin-top: 50px;
-  width: 100%;
   height: fit-content;
   text-align: left;
   /* text-indent: 70px; */
@@ -138,7 +137,7 @@ h5 {
   color: white;
   font-weight: 800;
   line-height: 1;
-  font-family: "Untitled Serif";
+  font-family: "Aeonik";
   /* font-family: "Untitled Serif"; */
   font-size: 43.86px;
 }
@@ -155,7 +154,8 @@ form {
   margin-bottom: 20px;
   color: #222;
   font-size: 18px;
-  font-family: "Untitled Sans";
+  font-family: "League Spartan";
+  /* font-family: "Untitled Sans"; */
   text-align: center;
   font-weight: bold;
   border: 2px solid #cccccc;
@@ -184,21 +184,24 @@ form {
   font-size: 25px;
   color: #fff;
   margin: 0;
-  font-family: "Untitled Sans";
+  font-family: "League Spartan";
+  /* font-family: "Untitled Sans"; */
   font-weight: 300;
 }
 
 /**btn*/
 .btn-submit {
   cursor: pointer;
-  background-color: #00b085;
+  background-color: #edaf1a;
+  /* background-color: #00b085; */
   color: #ffffff;
   padding: 15px;
   border: 0px;
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 700;
-  font-family: "Untitled Sans";
+  font-family: "League Spartan";
+  /* font-family: "Untitled Sans"; */
   border-radius: 100px;
   width: 100%;
   max-width: 290px;
@@ -208,13 +211,14 @@ form {
 }
 
 .btn-submit:hover {
-  background-color: #157245;
+  /* background-color: #157245; */
   color: white;
 }
 
 .btn-defaul {
   white-space: nowrap;
-  background-color: #8cc16f;
+  background-color: #edaf1a;
+  /* background-color: #8cc16f; */
   color: white;
   transition: 0.2s ease-out;
   min-height: 54px;
@@ -226,7 +230,7 @@ form {
 }
 
 .btn-defaul:hover {
-  background-color: #5a9254;
+  /* background-color: #5a9254; */
   border: none;
   color: white;
 }
@@ -262,7 +266,8 @@ form {
   padding-left: 10px;
   font-size: 10px;
   font-weight: 100;
-  font-family: "Untitled Sans";
+  /* font-family: "Untitled Sans"; */
+  font-family: "League Spartan";
 }
 
 .copy-texto:nth-child(1)::after,
@@ -283,12 +288,13 @@ form {
   text-align: center;
   font-size: 10px;
   font-weight: 100;
-  font-family: "Untitled Sans";
+  /* font-family: "Untitled Sans"; */
+  font-family: "League Spartan";
 }
 
 /* *Pagina 2 componentes */
 .main-part {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .num {
@@ -302,7 +308,8 @@ form {
   width: 35px;
   height: 35px;
   line-height: 34px;
-  font-family: "Untitled Sans";
+  /* font-family: "Untitled Sans"; */
+  font-family: "League Spartan";
 }
 
 .num::after {
@@ -331,7 +338,8 @@ form {
   max-width: 900px;
   margin-top: 20px;
   font-size: 54px;
-  font-family: "Untitled Serif";
+  /* font-family: "Untitled Serif"; */
+  font-family: "League Spartan";
   letter-spacing: 1px;
   font-weight: 500;
 }
@@ -371,6 +379,7 @@ svg > g > path {
 }
 
 .text-questions {
+  text-decoration: none;
   margin-top: 10px;
   font-size: 19px;
   font-family: "Untitled Sans";
@@ -384,7 +393,8 @@ svg > g > path {
   color: white;
   font-size: 25px;
   text-align: center;
-  font-family: "Untitled Sans";
+  /* font-family: "Untitled Sans"; */
+  font-family: "League Spartan";
 }
 
 .form-ranger {
@@ -412,7 +422,8 @@ svg > g > path {
   position: relative;
   color: white;
   font-size: 25px;
-  font-family: "Untitled Sans";
+  /* font-family: "Untitled Sans"; */
+  font-family: "League Spartan";
   font-weight: bold;
 }
 
@@ -451,7 +462,8 @@ svg > g > path {
   margin-top: 10px;
   margin-bottom: 15px;
   text-transform: uppercase;
-  font-family: "Untitled Sans";
+  /* font-family: "Untitled Sans"; */
+  font-family: "League Spartan";
   color: #01193f;
   font-size: 14px;
   text-align: center;
@@ -469,23 +481,127 @@ svg > g > path {
   text-align: center;
   margin: 0 auto;
   font-size: 14px;
+  font-family: "League Spartan";
 }
 .text-infor {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
 .border-video {
-  border: 2px solid #bfbfbf;
-  padding: 7px;
-  width: 300px;
-  height: 300px;
+  border: 1px solid #bfbfbf;
+  /* padding: 7px; */
+  height: fit-content;
   margin: auto;
 }
 .square-video {
   background-color: black;
   width: 100%;
   height: 100%;
+}
+
+.item-footer:nth-child(1),
+.item-footer:nth-child(2) {
+  position: relative;
+  margin-right: 10px;
+}
+
+.item-footer::after {
+  position: absolute;
+  content: "";
+  border-right: 1px solid white;
+  height: 13px;
+  padding-right: 10px;
+  bottom: 5px;
+}
+
+/* !RANGER */
+/* Custom input range */
+.range {
+  margin-top: 70px;
+  position: relative;
+  z-index: 9;
+  height: 64px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 4rem;
+  display: grid;
+}
+
+.range__content {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.range__slider {
+  width: 100%;
+  height: 12px;
+  background-color: white;
+  border-radius: 4rem;
+  box-shadow: 0 4px 12px #0a0c1580;
+  overflow: hidden;
+}
+
+.range__slider-line {
+  width: 0;
+  height: 100%;
+  background-color: #269ccc;
+}
+
+.range__thumb {
+  width: 42px;
+  height: 42px;
+  background-color: #269ccc;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #0a0c1580;
+  position: absolute;
+}
+
+/* Value input range */
+.range__value {
+  padding: 8px;
+  width: 56.22px;
+  height: 35.19px;
+  background-color: #ffffff;
+  position: absolute;
+  top: -50px;
+  /* top: 0px; */
+  /* left: -10px; */
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12%;
+  /* border-radius: 2rem 2rem 2rem 0.25rem; */
+  /* transform: rotate(-45deg); */
+  display: grid;
+  place-items: center;
+}
+
+.range__value-number {
+  /* transform: rotate(45deg); */
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-family: "League Spartan";
+}
+
+/* Default input range */
+.range__input {
+  appearance: none;
+  width: 100%;
+  height: 16px;
+  position: absolute;
+  opacity: 0;
+}
+
+.range__input::-webkit-slider-thumb {
+  appearance: none;
+  width: 32px;
+  height: 32px;
+}
+
+.range__input::-webkit-slider-thumb:hover {
+  cursor: pointer;
 }
 
 /**text color  */
@@ -511,14 +627,16 @@ svg > g > path {
   margin-bottom: 32px;
   margin-top: 40px;
   font-size: 28px;
-  font-family: "Untitled Sans";
+  font-family: "League Spartan";
+  /* font-family: "Untitled Sans"; */
 }
 
 .note {
   text-align: center;
   font-size: 22px;
   color: #01193f;
-  font-family: "Untitled Sans";
+  /* font-family: "Untitled Sans"; */
+  font-family: "League Spartan";
 }
 
 /* *max-width */
@@ -542,8 +660,14 @@ svg > g > path {
   max-width: 960px;
 }
 
+.w-fit-content {
+  width: fit-content;
+}
 .w-140p {
   width: 140px;
+}
+.w330p {
+  width: 330px;
 }
 .h-70px {
   height: 71px;
@@ -587,6 +711,18 @@ svg > g > path {
   font-size: 10px;
 }
 
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
 .fs-24 {
   font-size: 24px;
 }
@@ -608,6 +744,17 @@ svg > g > path {
   font-family: "Untitled Serif";
 }
 
+.fs-lato {
+  font-family: "Lato";
+}
+
+.fs-league {
+  font-family: "League Spartan";
+}
+.fs-aeionik {
+  font-family: "Aeonik";
+}
+
 .fw-500 {
   font-weight: 500;
 }
@@ -623,4 +770,9 @@ svg > g > path {
 
 .bg-light-blue {
   background-color: #00ade6;
+}
+
+/*  */
+.center {
+  place-items: center;
 }
