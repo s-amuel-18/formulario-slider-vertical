@@ -52,7 +52,7 @@ h5 {
 
 .swiper-slide:nth-child(2) {
   overflow-y: auto;
-  padding-top: 150px;
+  padding-top: 120px;
   background-color: #1b223f;
   justify-content: start;
   flex-direction: column;
@@ -60,7 +60,7 @@ h5 {
 }
 
 .swiper-slide:nth-child(3) {
-  padding-top: 140px;
+  padding-top: 120px;
   background-color: #1b223f;
   justify-content: start;
   flex-direction: column;
@@ -75,14 +75,14 @@ h5 {
 
 .swiper-slide:nth-child(5) {
   overflow: auto;
-  padding-top: 100px;
+  padding-top: 90px;
   justify-content: start;
   flex-direction: column;
 }
 
 .swiper-slide:nth-child(6) {
   overflow: auto;
-  padding-top: 100px;
+  padding-top: 90px;
   justify-content: start;
   flex-direction: column;
 }
@@ -294,7 +294,7 @@ form {
 
 /* *Pagina 2 componentes */
 .main-part {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .num {
@@ -379,6 +379,7 @@ svg > g > path {
 }
 
 .text-questions {
+  text-decoration: none;
   margin-top: 10px;
   font-size: 19px;
   font-family: "Untitled Sans";
@@ -516,6 +517,7 @@ svg > g > path {
 /* !RANGER */
 /* Custom input range */
 .range {
+  margin-top: 70px;
   position: relative;
   z-index: 9;
   height: 64px;
@@ -560,11 +562,14 @@ svg > g > path {
 .range__value {
   padding: 8px;
   width: 56.22px;
-  height: 38.19px;
+  height: 35.19px;
   background-color: #ffffff;
   position: absolute;
-  top: -60px;
-  left: -16px;
+  top: -50px;
+  /* top: 0px; */
+  /* left: -10px; */
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 12%;
   /* border-radius: 2rem 2rem 2rem 0.25rem; */
   /* transform: rotate(-45deg); */
@@ -576,7 +581,7 @@ svg > g > path {
   /* transform: rotate(45deg); */
   font-weight: 700;
   color: rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 16px;
   font-family: "League Spartan";
 }
 
@@ -655,6 +660,9 @@ svg > g > path {
   max-width: 960px;
 }
 
+.w-fit-content {
+  width: fit-content;
+}
 .w-140p {
   width: 140px;
 }

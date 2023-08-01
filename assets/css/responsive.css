@@ -56,6 +56,10 @@
 
 @media screen and (max-width: 610px) {
   /* 3 */
+  .initial-num,
+  .last-num {
+    font-size: 17px;
+  }
   .initial-num::before {
     left: 0;
   }
@@ -154,6 +158,10 @@
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .mt-lg-nev-45 {
+    margin-top: -45px;
   }
 }
 
