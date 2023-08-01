@@ -96,29 +96,59 @@ function prevSlide() {
   });
 })();
 
-// !Ranger
+// * Average electric bill
 (() => {
   // Get DOM elements
   const rangeThumb = document.getElementById("range-thumb");
   const rangeNumber = document.getElementById("range-number");
   const rangeLine = document.getElementById("range-line");
   const rangeInput = document.getElementById("slider");
+  // * valores de entrada
+  const value_from_range =
+    document.getElementById("value_from_range").dataset.value;
+  const value_to_range =
+    document.getElementById("value_to_range").dataset.value;
+
+  // * Funcion para calcular la cantidad de dinero en base al porcentaje
+  function fromPercentageToValue() {
+    // TODO: hacer validaciones
+
+    const fromRange = Number(value_from_range);
+    const toRange = Number(value_to_range);
+
+    const actualRangeNumber = Number(rangeInput.value) - fromRange;
+    const toMoneyFromCero = toRange - fromRange;
+    const percentage = (actualRangeNumber * 100) / toMoneyFromCero;
+    return percentage;
+    // // const percentajeValue = Number(rangeInput.value);
+
+    // const moneyFromPercentaje = (percentage * toMoneyFromCero) / 100;
+    // return Math.floor(moneyFromPercentaje + fromMoney);
+  }
 
   // Update the value displayed next to the range input
   const updateRangeValue = () => {
-    rangeNumber.textContent = rangeInput.value;
+    // const rangeNumverValue = fromPercentageToValue(
+    //   Number(rangeInput.value),
+    //   Number(value_from_range.dataset.value),
+    //   Number(value_to_range.dataset.value)
+    // );
+
+    rangeNumber.textContent = "$" + rangeInput.value;
+    // rangeNumber.textContent = "$" + rangeNumverValue;
   };
 
   // Update the position of the range thumb and the width of the range line
   const updateRangeVisuals = () => {
-    const thumbPosition = rangeInput.value / rangeInput.max;
+    const percentage = fromPercentageToValue();
+    const thumbPosition = percentage / 100;
     const space = rangeInput.offsetWidth - rangeThumb.offsetWidth;
 
     // Calculate and set the left position of the range thumb
     rangeThumb.style.left = thumbPosition * space + "px";
 
     // Set the width of the range line based on the input value
-    rangeLine.style.width = rangeInput.value + "%";
+    rangeLine.style.width = percentage + "%";
   };
 
   // Add event listener to the range input for real-time updates
