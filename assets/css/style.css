@@ -485,8 +485,7 @@ svg > g > path {
 }
 
 .item-footer:nth-child(1),
-.item-footer:nth-child(2),
-.item-footer:nth-child(3) {
+.item-footer:nth-child(2) {
   position: relative;
   margin-right: 10px;
 }
@@ -495,7 +494,7 @@ svg > g > path {
   position: absolute;
   content: "";
   border-right: 1px solid white;
-  height: 15px;
+  height: 13px;
   padding-right: 10px;
   bottom: 5px;
 }
@@ -602,6 +601,10 @@ svg > g > path {
   font-size: 10px;
 }
 
+.fs-11 {
+  font-size: 11px;
+}
+
 .fs-12 {
   font-size: 12px;
 }
@@ -650,4 +653,9 @@ svg > g > path {
 
 .bg-light-blue {
   background-color: #00ade6;
+}
+
+/*  */
+.center {
+  place-items: center;
 }
