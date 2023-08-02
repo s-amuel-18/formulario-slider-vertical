@@ -5,8 +5,7 @@
   }
 
   .copy-texto:nth-child(1)::after,
-  .copy-texto:nth-child(2)::after,
-  .copy-texto:nth-child(3)::after {
+  .copy-texto:nth-child(2)::after {
     right: -2.5px;
   }
   .copy-texto,
@@ -124,6 +123,10 @@
 
   .fs-md-18 {
     font-size: 18px;
+  }
+
+  .fs-md-22 {
+    font-size: 22px;
   }
 
   .w-md-100 {
