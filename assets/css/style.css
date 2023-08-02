@@ -35,7 +35,6 @@ h5 {
   font-size: 18px;
   display: flex;
   justify-content: center;
-  padding: 20px;
   background-color: #1b223f;
 }
 
@@ -44,10 +43,7 @@ h5 {
   background-size: cover;
   background-position: center 10%;
   background-repeat: no-repeat;
-  flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  gap: 40px;
 }
 
 .swiper-slide:nth-child(2) {
@@ -87,11 +83,23 @@ h5 {
   flex-direction: column;
 }
 
-.swiper-slide img {
-  display: block;
+.layer {
+  height: 100%;
+  background-color: #1b223f87;
+  width: 100%;
+}
+
+.layer-valid {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-color: #00000053;
+}
+
+.body-grid {
+  background-image: url(../image/fondo-validacion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .text-70-left {
@@ -101,12 +109,9 @@ h5 {
 /* svg */
 /* *componentes */
 .logo {
-  width: 200px;
-  height: 33px;
-  margin-top: 50px;
+  width: 300px;
   height: fit-content;
   text-align: left;
-  /* text-indent: 70px; */
 }
 
 .logo > h4 > a {
@@ -151,11 +156,11 @@ form {
 .search {
   max-width: 290px;
   height: 57px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #222;
   font-size: 18px;
-  font-family: "League Spartan";
-  /* font-family: "Untitled Sans"; */
+  text-transform: uppercase;
+  font-family: "Untitled Sans";
   text-align: center;
   font-weight: bold;
   border: 2px solid #cccccc;
@@ -173,11 +178,11 @@ form {
 } */
 
 .paragraph {
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   max-width: 870px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .paragraph > p {
@@ -193,15 +198,15 @@ form {
 .btn-submit {
   cursor: pointer;
   background-color: #edaf1a;
-  /* background-color: #00b085; */
+  text-transform: uppercase;
   color: #ffffff;
   padding: 15px;
   border: 0px;
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 700;
-  font-family: "League Spartan";
-  /* font-family: "Untitled Sans"; */
+  /* font-family: "League Spartan"; */
+  font-family: "Untitled Sans";
   border-radius: 100px;
   width: 100%;
   max-width: 290px;
@@ -247,7 +252,7 @@ form {
   place-items: center;
   z-index: 99999;
   position: fixed;
-  bottom: 10px;
+  bottom: 30px;
   right: 30px;
   text-decoration: none;
   height: 30px;
@@ -271,8 +276,7 @@ form {
 }
 
 .copy-texto:nth-child(1)::after,
-.copy-texto:nth-child(2)::after,
-.copy-texto:nth-child(3)::after {
+.copy-texto:nth-child(2)::after {
   position: absolute;
   content: "";
   width: 1px;
@@ -455,7 +459,7 @@ svg > g > path {
 
 /*  */
 .title-banner {
-  font-size: 32px;
+  font-size: 40px;
 }
 
 .text-cart-img {
@@ -621,6 +625,10 @@ svg > g > path {
   color: #c0c0c0;
 }
 
+.text-yellow {
+  color: #edaf1a;
+}
+
 .min-title {
   text-align: center;
   font-weight: bold;
@@ -695,6 +703,9 @@ svg > g > path {
   padding-left: 40px;
   padding-right: 40px;
 }
+.pt-50 {
+  padding-top: 50px;
+}
 
 /* *transfor */
 /* ?rotate */
@@ -710,31 +721,29 @@ svg > g > path {
 .fs-10px {
   font-size: 10px;
 }
-
 .fs-11 {
   font-size: 11px;
 }
-
 .fs-12 {
   font-size: 12px;
 }
-
 .fs-15 {
   font-size: 15px;
 }
-
 .fs-24 {
   font-size: 24px;
 }
 .fs-25 {
   font-size: 25px;
 }
-
 .fs-28 {
   font-size: 28px;
 }
 .fs-33 {
   font-size: 33px;
+}
+.fs-75 {
+  font-size: 75px;
 }
 
 .fs-sans {
@@ -743,11 +752,9 @@ svg > g > path {
 .fs-serif {
   font-family: "Untitled Serif";
 }
-
 .fs-lato {
   font-family: "Lato";
 }
-
 .fs-league {
   font-family: "League Spartan";
 }
