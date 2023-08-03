@@ -114,7 +114,7 @@ h5 {
   text-align: left;
 }
 
-.logo > h4 > a {
+.logo>h4>a {
   text-decoration: none;
   font-size: 35px;
   letter-spacing: 1.5px;
@@ -171,6 +171,7 @@ form {
   outline: none;
   border: 2px solid #cccccc;
 }
+
 /* 
 .active-blue:focus {
   border: 2px solid #0087ff;
@@ -185,7 +186,7 @@ form {
   margin-top: 35px;
 }
 
-.paragraph > p {
+.paragraph>p {
   font-size: 25px;
   color: #fff;
   margin: 0;
@@ -370,15 +371,15 @@ form {
   transition: 0.2s all;
 }
 
-svg > g > path {
+svg>g>path {
   transition: 0.3s all;
 }
 
-.check-icon:hover > svg > g > path {
+.check-icon:hover>svg>g>path {
   fill: #64a729;
 }
 
-.x-icon:hover > svg > g > path {
+.x-icon:hover>svg>g>path {
   fill: #ca272b;
 }
 
@@ -487,16 +488,19 @@ svg > g > path {
   font-size: 14px;
   font-family: "League Spartan";
 }
+
 .text-infor {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
 .border-video {
   border: 1px solid #bfbfbf;
   /* padding: 7px; */
   height: fit-content;
   margin: auto;
 }
+
 .square-video {
   background-color: black;
   width: 100%;
@@ -671,12 +675,15 @@ svg > g > path {
 .w-fit-content {
   width: fit-content;
 }
+
 .w-140p {
   width: 140px;
 }
+
 .w330p {
   width: 330px;
 }
+
 .h-70px {
   height: 71px;
 }
@@ -703,8 +710,19 @@ svg > g > path {
   padding-left: 40px;
   padding-right: 40px;
 }
+
 .pt-50 {
   padding-top: 50px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.py-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
 }
 
 /* *transfor */
@@ -721,27 +739,35 @@ svg > g > path {
 .fs-10px {
   font-size: 10px;
 }
+
 .fs-11 {
   font-size: 11px;
 }
+
 .fs-12 {
   font-size: 12px;
 }
+
 .fs-15 {
   font-size: 15px;
 }
+
 .fs-24 {
   font-size: 24px;
 }
+
 .fs-25 {
   font-size: 25px;
 }
+
 .fs-28 {
   font-size: 28px;
 }
+
 .fs-33 {
   font-size: 33px;
 }
+
 .fs-75 {
   font-size: 75px;
 }
@@ -749,15 +775,19 @@ svg > g > path {
 .fs-sans {
   font-family: "Untitled Sans";
 }
+
 .fs-serif {
   font-family: "Untitled Serif";
 }
+
 .fs-lato {
   font-family: "Lato";
 }
+
 .fs-league {
   font-family: "League Spartan";
 }
+
 .fs-aeionik {
   font-family: "Aeonik";
 }
@@ -765,6 +795,7 @@ svg > g > path {
 .fw-500 {
   font-weight: 500;
 }
+
 /* line height */
 .lh-39 {
   line-height: 39px;
