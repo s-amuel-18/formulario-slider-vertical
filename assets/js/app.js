@@ -44,7 +44,7 @@ function prevSlide() {
   btnSubmit.addEventListener("click", function (e) {
     const valueEmailAddress = inputEmailAddress.value;
 
-    if (!validator.isEmail(valueEmailAddress)) {
+    if (!isEmail(valueEmailAddress)) {
       alert(
         "Please correct the following errors: \n\n -Please enter your email address"
       );
