@@ -44,6 +44,19 @@
     padding-top: 100px;
     justify-content: space-between;
   }
+
+  .btn-submit {
+    font-size: 17px;
+  }
+
+  .fs-sm-17 {
+    font-size: 17px;
+  }
+
+  .fs-sm-18 {
+    font-size: 18px;
+  }
+
   .fs-sm-50 {
     font-size: 50px;
   }
