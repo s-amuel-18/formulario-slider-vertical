@@ -39,9 +39,9 @@ h5 {
 }
 
 .swiper-slide:nth-child(1) {
-  background-image: url(../image/fondo.jpg);
+  background-image: url(../image/happy-familia.png);
   background-size: cover;
-  background-position: center 10%;
+  background-position: center;
   background-repeat: no-repeat;
   align-items: center;
 }
@@ -114,7 +114,7 @@ h5 {
   text-align: left;
 }
 
-.logo>h4>a {
+.logo > h4 > a {
   text-decoration: none;
   font-size: 35px;
   letter-spacing: 1.5px;
@@ -186,7 +186,7 @@ form {
   margin-top: 35px;
 }
 
-.paragraph>p {
+.paragraph > p {
   font-size: 25px;
   color: #fff;
   margin: 0;
@@ -371,15 +371,15 @@ form {
   transition: 0.2s all;
 }
 
-svg>g>path {
+svg > g > path {
   transition: 0.3s all;
 }
 
-.check-icon:hover>svg>g>path {
+.check-icon:hover > svg > g > path {
   fill: #64a729;
 }
 
-.x-icon:hover>svg>g>path {
+.x-icon:hover > svg > g > path {
   fill: #ca272b;
 }
 
@@ -722,7 +722,6 @@ svg>g>path {
 .py-70 {
   padding-top: 70px;
   padding-bottom: 70px;
-
 }
 
 /* *transfor */
