@@ -27,7 +27,12 @@
   </head>
 
   <body>
-    <form action="./informacion-validada.html" method="get" id="main_form">
+    <form
+      action="./informacion-validada.html"
+      method="get"
+      id="main_form"
+      autocomplete="off"
+    >
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <!-- * primera seccion (zip code) -->
@@ -256,19 +261,10 @@
                         max="800"
                         value="425"
                         step="1"
-                        name="average Electric bill"
+                        name="average_electric_bill"
                       />
                     </div>
                   </div>
-
-                  <!-- <input
-                    type="range"
-                    class="form-range"
-                    id="customRange1"
-                    min="50"
-                    max="800"
-                    value="425"
-                  /> -->
 
                   <div class="num-ranger">
                     <div
@@ -417,7 +413,7 @@
                       type="email"
                       class="form-control fw-500 active-blue max-550 w-75 search fs-24 fs-md-18 mx-auto rounded-0 text-center p-1 h-70px h-md-55"
                       placeholder="Enter first Name"
-                      name="first Name"
+                      name="first_name"
                     />
 
                     <!-- inputs (name: last Name) -->
@@ -426,7 +422,7 @@
                       type="email"
                       class="form-control fw-500 active-blue max-550 w-75 search fs-24 fs-md-18 mx-auto rounded-0 text-center p-1 h-70px h-md-55"
                       placeholder="Enter Last Name"
-                      name="last Name"
+                      name="last_name"
                     />
 
                     <button
