@@ -1,3 +1,5 @@
+const main_form = document.querySelector("#main_form");
+
 $("[data-mask]").inputmask();
 
 // * Configuración swiper js
@@ -68,7 +70,9 @@ function prevSlide() {
       return null;
     }
 
-    window.location.href = "./informacion-validada.html";
+    // console.log("Se ejecuta");
+    main_form.submit();
+    // window.location.href = "./informacion-validada.html";
   });
 })();
 
