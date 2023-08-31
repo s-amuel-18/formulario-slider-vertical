@@ -1,291 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME</title>
 
-    <!-- *fuentes -->
-    <link rel="stylesheet" href="./assets/fonts/league_espartan.css" />
-    <link rel="stylesheet" href="./assets/fonts/aeonik.css" />
-    <link rel="stylesheet" href="./assets/fonts/serif-sans.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOME</title>
 
-    <!-- * swiper js -->
-    <link rel="stylesheet" href="./assets/lib/swiperjs/swiper.min.css" />
+  <!-- *fuentes -->
+  <link rel="stylesheet" href="./assets/fonts/league_espartan.css" />
+  <link rel="stylesheet" href="./assets/fonts/aeonik.css" />
+  <link rel="stylesheet" href="./assets/fonts/serif-sans.css" />
 
-    <!-- * bootstrap 5 -->
-    <link rel="stylesheet" href="./assets/lib/bootstrap-5/bootstrap.min.css" />
-    <!-- *Icon -->
-    <link
-      rel="stylesheet"
-      href="assets/lib/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css"
-    />
+  <!-- * swiper js -->
+  <link rel="stylesheet" href="./assets/lib/swiperjs/swiper.min.css" />
 
-    <!-- * main style -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-  </head>
+  <!-- * bootstrap 5 -->
+  <link rel="stylesheet" href="./assets/lib/bootstrap-5/bootstrap.min.css" />
+  <!-- *Icon -->
+  <link rel="stylesheet" href="assets/lib/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css" />
 
-  <body>
-    <form
-      action="./informacion-validada.html"
-      method="get"
-      id="main_form"
-      autocomplete="off"
-    >
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <!-- * primera seccion (zip code) -->
-          <div class="swiper-slide">
-            <div class="layer">
-              <div
-                class="container h-100 d-flex flex-column justify-content-between gap-4"
-              >
-                <a href="#" class="logo pt-4 mx-auto mx-md-0 d-block">
-                  <img
-                    src="./assets/image/logo-white.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </a>
+  <!-- * main style -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
 
-                <div class="content-info">
-                  <h1 class="titulo-banner">
-                    Take Control With Sunwise.
-                    <br />
-                    Choose Where Your Power Comes From!
-                  </h1>
+<body>
+  <form action="./informacion-validada.html" method="get" id="main_form" autocomplete="off">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- * primera seccion (zip code) -->
+        <div class="swiper-slide">
+          <div class="layer">
+            <div class="container h-100 d-flex flex-column justify-content-between gap-4">
+              <a href="#" class="logo pt-4 mx-auto mx-md-0 d-block">
+                <img src="./assets/image/logo-white.png" alt="" class="img-fluid" />
+              </a>
 
-                  <div class="paragraph">
-                    <p>
-                      Join the 630K+ Sunwise customers and experience the power
-                      of the sun! Click below to see if solar works for you!
-                    </p>
-                  </div>
+              <div class="content-info">
+                <h1 class="titulo-banner">
+                  Take Control With Sunwise.
+                  <br />
+                  Choose Where Your Power Comes From!
+                </h1>
 
-                  <div class="for-code">
-                    <!-- Input  Zip (name : Codigo) -->
-                    <input
-                      id="input-zip-code"
-                      type="tel"
-                      class="form-control search mx-auto fs-sm-18 border-0 fs-md"
-                      value=""
-                      placeholder="Enter Your Zip Code"
-                      name="zip"
-                      maxlength="5"
-                    />
-
-                    <button
-                      id="submit-zip-code"
-                      class="btn btn-submit fs-sm-17"
-                      type="button"
-                    >
-                      Calculate Your Savings
-                    </button>
-                  </div>
-                </div>
-                <div class="text-copy">
-                  <span class="d-block p-copy">
-                    © 2023 Sunwise. All rights reserved.
-                  </span>
-
-                  <small class="d-block">
-                    <a
-                      href="#"
-                      class="text-white text-decoration-none copy-texto"
-                    >
-                      2023 Sunwise. All rights reserved.</a
-                    >
-                    <a
-                      href="#"
-                      class="text-white text-decoration-none copy-texto"
-                    >
-                      Privacy Policy.</a
-                    >
-
-                    <a
-                      href="#"
-                      class="text-white text-decoration-none copy-texto"
-                    >
-                      Terms</a
-                    >
-                  </small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- * segunda seccion (casa propia) -->
-          <div class="swiper-slide">
-            <div
-              class="container h-100 d-flex flex-column justify-content-between"
-            >
-              <div class="main-part">
-                <div class="index-navigation">
-                  <div class="num text-white">1</div>
+                <div class="paragraph">
+                  <p>
+                    Join the 630K+ Sunwise customers and experience the power
+                    of the sun! Click below to see if solar works for you!
+                  </p>
                 </div>
 
-                <h2 class="info mx-auto text-yellow fw-bolder">
-                  Do you own your home?
-                </h2>
+                <div class="for-code">
+                  <!-- Input  Zip (name : Codigo) -->
+                  <input id="input-zip-code" type="tel" class="form-control search mx-auto fs-sm-18 border-0 fs-md"
+                    value="" placeholder="Enter Your Zip Code" name="zip" maxlength="5" />
 
-                <div class="yes-no">
-                  <div class="check-icon" onclick="nextSlide()">
-                    <?xml version="1.0" encoding="utf-8"?>
-                    <svg
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px"
-                      y="0px"
-                      width="170px"
-                      height="150px"
-                      viewBox="0 0 122.877 101.052"
-                      enable-background="new 0 0 122.877 101.052"
-                      xml:space="preserve"
-                    >
-                      <g>
-                        <path
-                          fill="#fff"
-                          d="M4.43,63.63c-2.869-2.755-4.352-6.42-4.427-10.11c-0.074-3.689,1.261-7.412,4.015-10.281 c2.752-2.867,6.417-4.351,10.106-4.425c3.691-0.076,7.412,1.255,10.283,4.012l24.787,23.851L98.543,3.989l1.768,1.349l-1.77-1.355 c0.141-0.183,0.301-0.339,0.479-0.466c2.936-2.543,6.621-3.691,10.223-3.495V0.018l0.176,0.016c3.623,0.24,7.162,1.85,9.775,4.766 c2.658,2.965,3.863,6.731,3.662,10.412h0.004l-0.016,0.176c-0.236,3.558-1.791,7.035-4.609,9.632l-59.224,72.09l0.004,0.004 c-0.111,0.141-0.236,0.262-0.372,0.368c-2.773,2.435-6.275,3.629-9.757,3.569c-3.511-0.061-7.015-1.396-9.741-4.016L4.43,63.63 L4.43,63.63z"
-                        />
-                      </g>
-                    </svg>
-
-                    <span class="text-questions d-block text-white">Yes</span>
-                  </div>
-
-                  <a
-                    href="./no-validacion.html"
-                    class="x-icon text-decoration-none"
-                  >
-                    <?xml version="1.0" encoding="utf-8"?>
-                    <svg
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px"
-                      y="0px"
-                      width="170px"
-                      height="150px"
-                      viewBox="0 0 121.31 122.876"
-                      enable-background="new 0 0 121.31 122.876"
-                      xml:space="preserve"
-                    >
-                      <g>
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          fill="#fff"
-                          d="M90.914,5.296c6.927-7.034,18.188-7.065,25.154-0.068 c6.961,6.995,6.991,18.369,0.068,25.397L85.743,61.452l30.425,30.855c6.866,6.978,6.773,18.28-0.208,25.247 c-6.983,6.964-18.21,6.946-25.074-0.031L60.669,86.881L30.395,117.58c-6.927,7.034-18.188,7.065-25.154,0.068 c-6.961-6.995-6.992-18.369-0.068-25.397l30.393-30.827L5.142,30.568c-6.867-6.978-6.773-18.28,0.208-25.247 c6.983-6.963,18.21-6.946,25.074,0.031l30.217,30.643L90.914,5.296L90.914,5.296z"
-                        />
-                      </g>
-                    </svg>
-
-                    <span class="text-questions d-block text-white">No</span>
-                  </a>
-                </div>
-              </div>
-              <div class="text-copy">
-                <span class="d-block p-copy">
-                  © 2023 Sunwise. All rights reserved.
-                </span>
-
-                <small class="d-block">
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    2023 Sunwise. All rights reserved.</a
-                  >
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    Privacy Policy.</a
-                  >
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    Terms</a
-                  >
-                </small>
-              </div>
-            </div>
-          </div>
-
-          <!-- * tercera seccion (Electricidad) -->
-          <div class="swiper-slide">
-            <div
-              class="container h-100 d-flex justify-content-between flex-column"
-            >
-              <div class="main-part">
-                <div class="index-navigation">
-                  <div class="num text-white">2</div>
-                </div>
-
-                <h2 class="info mx-auto text-yellow fw-bolder">
-                  What is Your Average Electric Bill?
-                </h2>
-
-                <h4 class="sub-info">
-                  Move the slider to indicate your monthly average electricity
-                  bill amount
-                </h4>
-
-                <div class="form-ranger mx-auto">
-                  <!-- <label for="customRange1" class="form-label">Example range</label> -->
-                  <div class="range">
-                    <div class="range__content">
-                      <div class="range__slider">
-                        <div class="range__slider-line" id="range-line"></div>
-                      </div>
-
-                      <div class="range__thumb" id="range-thumb">
-                        <div class="range__value">
-                          <span class="range__value-number" id="range-number">
-                            <!-- Aqui va el indicador -->
-                          </span>
-                        </div>
-                      </div>
-
-                      <!-- Input (range name: average electric bill) -->
-                      <input
-                        type="range"
-                        class="range__input"
-                        id="slider"
-                        min="50"
-                        max="800"
-                        value="425"
-                        step="1"
-                        name="average_electric_bill"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="num-ranger">
-                    <div
-                      id="value_from_range"
-                      data-value="50"
-                      class="initial-num"
-                    >
-                      $50
-                    </div>
-                    <div id="value_to_range" data-value="800" class="last-num">
-                      $800
-                    </div>
-                  </div>
-
-                  <button
-                    type="button"
-                    onclick="nextSlide()"
-                    id="btn_ranger_next"
-                    class="btn btn-submit max-120 mt-lg-nev-45"
-                  >
-                    Next
+                  <button id="submit-zip-code" class="btn btn-submit fs-sm-17" type="button">
+                    Calculate Your Savings
                   </button>
                 </div>
               </div>
@@ -295,283 +66,329 @@
                 </span>
 
                 <small class="d-block">
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    2023 Sunwise. All rights reserved.</a
-                  >
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    Privacy Policy.</a
-                  >
+                  <a href="#" class="text-white text-decoration-none copy-texto">
+                    2023 Sunwise. All rights reserved.</a>
+                  <a href="#" class="text-white text-decoration-none copy-texto">
+                    Privacy Policy.</a>
 
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    Terms</a
-                  >
-                </small>
-              </div>
-            </div>
-          </div>
-
-          <!-- * Cuarta sección (Email address) -->
-          <div class="swiper-slide">
-            <div
-              class="container h-100 d-flex justify-content-between flex-column"
-            >
-              <div class="main-part">
-                <div class="index-navigation">
-                  <div class="num text-white">3</div>
-                </div>
-
-                <h2 class="info mx-auto text-yellow fw-bolder">
-                  Where Can We Send Your Free Solar Quote?
-                  <div class="icon-telegram mt-3">
-                    <i
-                      class="fas fa-paper-plane tr-rotate-20 text-white fa-1x fs-sm-50"
-                    ></i>
-                  </div>
-                </h2>
-
-                <div class="form-email mt-3">
-                  <div>
-                    <!-- Input (name: email-address)  -->
-                    <input
-                      id="email-address"
-                      type="email"
-                      class="form-control max-550 fw-500 w-75 search fs-24 fs-md-18 mx-auto rounded-0 text-center p-1 h-70px h-md-55"
-                      placeholder="Enter Your Email Address"
-                      name="email-address"
-                    />
-
-                    <button
-                      type="button"
-                      id="submit-email-address"
-                      class="btn btn-submit max-120 mt-3"
-                    >
-                      Next
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="text-copy">
-                <span class="d-block p-copy">
-                  © 2023 Sunwise. All rights reserved.
-                </span>
-
-                <small class="d-block">
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    2023 Sunwise. All rights reserved.</a
-                  >
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    Privacy Policy.</a
-                  >
-
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    Terms</a
-                  >
-                </small>
-              </div>
-            </div>
-          </div>
-
-          <!-- *Quinta seccion (Nombre y apellido) -->
-          <div class="swiper-slide">
-            <div
-              class="container h-100 d-flex justify-content-between flex-column"
-            >
-              <div class="main-part mb-4">
-                <div class="index-navigation">
-                  <div class="num text-white">4</div>
-                </div>
-
-                <h2 class="info mx-auto text-yellow fw-bolder">
-                  Who Is This Quote For?
-                </h2>
-
-                <h4 class="sub-info">Please enter your first and last name</h4>
-
-                <div class="form-email mt-5">
-                  <div>
-                    <!-- inputs (name: first Name) -->
-                    <input
-                      id="firs_name_text"
-                      type="email"
-                      class="form-control fw-500 active-blue max-550 w-75 search fs-24 fs-md-18 mx-auto rounded-0 text-center p-1 h-70px h-md-55"
-                      placeholder="Enter first Name"
-                      name="first_name"
-                    />
-
-                    <!-- inputs (name: last Name) -->
-                    <input
-                      id="last_name_text"
-                      type="email"
-                      class="form-control fw-500 active-blue max-550 w-75 search fs-24 fs-md-18 mx-auto rounded-0 text-center p-1 h-70px h-md-55"
-                      placeholder="Enter Last Name"
-                      name="last_name"
-                    />
-
-                    <button
-                      type="button"
-                      id="submit-name-text"
-                      class="btn btn-submit max-120 mt-1"
-                    >
-                      Next
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="text-copy">
-                <span class="d-block p-copy">
-                  © 2023 Sunwise. All rights reserved.
-                </span>
-
-                <small class="d-block">
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    2023 Sunwise. All rights reserved.</a
-                  >
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    Privacy Policy.</a
-                  >
-
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    Terms</a
-                  >
-                </small>
-              </div>
-            </div>
-          </div>
-
-          <!-- *Sexta numero telefonico -->
-          <div class="swiper-slide">
-            <div
-              class="container h-100 d-flex flex-column justify-content-between"
-            >
-              <div class="main-part mb-lg-4">
-                <div class="index-navigation">
-                  <div class="num text-white">5</div>
-                </div>
-
-                <h2 class="info mx-auto text-yellow fw-bolder">
-                  Phone Number
-                  <div class="icon-phone tr-rotate-360 mt-4">
-                    <i class="fas fa-phone text-white fa-1x fs-sm-50"></i>
-                  </div>
-                </h2>
-
-                <div class="form-email mt-3">
-                  <div>
-                    <!-- input (name: phone-number) -->
-                    <input
-                      id="phone-number"
-                      type="tel"
-                      name="phone_home"
-                      data-inputmask='"mask": "(999) 999-9999"'
-                      data-mask
-                      class="form-control fw-500 max-550 w-75 search fs-24 fs-md-18 mx-auto rounded-0 text-center p-1 h-70px h-md-55"
-                      placeholder="Enter Your Phone Number"
-                    />
-
-                    <small
-                      class="d-block text-grey fs-league fw-light fs-12 w-50 w-md-100 mx-auto"
-                    >
-                      By clicking below, I authorize Sunwise to call me and send
-                      pre-recorded messages and text messages to me about
-                      Sunwise products and services at the telephone number I
-                      entered above, using an autodialer, even if I am on a
-                      national or state “Do Not Call” list. Message and data
-                      rates may apply. Maximum 10 texts per month. Consent for
-                      calls & texts is optional. You can opt out anytime. You
-                      also agree to our
-                    </small>
-
-                    <button
-                      type="button"
-                      id="submit-phone-number"
-                      class="btn btn-submit max-250 mt-4"
-                    >
-                      Submit ▸
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="text-copy">
-                <span class="d-block p-copy">
-                  © 2023 Sunwise. All rights reserved.
-                </span>
-
-                <small class="d-block">
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    2023 Sunwise. All rights reserved.</a
-                  >
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    Privacy Policy.</a
-                  >
-
-                  <a
-                    href="#"
-                    class="text-white text-decoration-none copy-texto"
-                  >
-                    Terms</a
-                  >
+                  <a href="#" class="text-white text-decoration-none copy-texto">
+                    Terms</a>
                 </small>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- * segunda seccion (casa propia) -->
+        <div class="swiper-slide">
+          <div class="container h-100 d-flex flex-column justify-content-between">
+            <div class="main-part">
+              <div class="index-navigation">
+                <div class="num text-white">1</div>
+              </div>
+
+              <h2 class="info mx-auto text-yellow fw-bolder">
+                Do you own your home?
+              </h2>
+
+              <div class="yes-no">
+                <div class="check-icon" onclick="nextSlide()">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="170px" height="150px"
+                    viewBox="0 0 122.877 101.052" enable-background="new 0 0 122.877 101.052" xml:space="preserve">
+                    <g>
+                      <path fill="#fff"
+                        d="M4.43,63.63c-2.869-2.755-4.352-6.42-4.427-10.11c-0.074-3.689,1.261-7.412,4.015-10.281 c2.752-2.867,6.417-4.351,10.106-4.425c3.691-0.076,7.412,1.255,10.283,4.012l24.787,23.851L98.543,3.989l1.768,1.349l-1.77-1.355 c0.141-0.183,0.301-0.339,0.479-0.466c2.936-2.543,6.621-3.691,10.223-3.495V0.018l0.176,0.016c3.623,0.24,7.162,1.85,9.775,4.766 c2.658,2.965,3.863,6.731,3.662,10.412h0.004l-0.016,0.176c-0.236,3.558-1.791,7.035-4.609,9.632l-59.224,72.09l0.004,0.004 c-0.111,0.141-0.236,0.262-0.372,0.368c-2.773,2.435-6.275,3.629-9.757,3.569c-3.511-0.061-7.015-1.396-9.741-4.016L4.43,63.63 L4.43,63.63z" />
+                    </g>
+                  </svg>
+
+                  <span class="text-questions d-block text-white">Yes</span>
+                </div>
+
+                <a href="./no-validacion.html" class="x-icon text-decoration-none">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="170px" height="150px"
+                    viewBox="0 0 121.31 122.876" enable-background="new 0 0 121.31 122.876" xml:space="preserve">
+                    <g>
+                      <path fill-rule="evenodd" clip-rule="evenodd" fill="#fff"
+                        d="M90.914,5.296c6.927-7.034,18.188-7.065,25.154-0.068 c6.961,6.995,6.991,18.369,0.068,25.397L85.743,61.452l30.425,30.855c6.866,6.978,6.773,18.28-0.208,25.247 c-6.983,6.964-18.21,6.946-25.074-0.031L60.669,86.881L30.395,117.58c-6.927,7.034-18.188,7.065-25.154,0.068 c-6.961-6.995-6.992-18.369-0.068-25.397l30.393-30.827L5.142,30.568c-6.867-6.978-6.773-18.28,0.208-25.247 c6.983-6.963,18.21-6.946,25.074,0.031l30.217,30.643L90.914,5.296L90.914,5.296z" />
+                    </g>
+                  </svg>
+
+                  <span class="text-questions d-block text-white">No</span>
+                </a>
+              </div>
+            </div>
+            <div class="text-copy">
+              <span class="d-block p-copy">
+                © 2023 Sunwise. All rights reserved.
+              </span>
+
+              <small class="d-block">
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  2023 Sunwise. All rights reserved.</a>
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  Privacy Policy.</a>
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  Terms</a>
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- * tercera seccion (Electricidad) -->
+        <div class="swiper-slide">
+          <div class="container h-100 d-flex justify-content-between flex-column">
+            <div class="main-part">
+              <div class="index-navigation">
+                <div class="num text-white">2</div>
+              </div>
+
+              <h2 class="info mx-auto text-yellow fw-bolder">
+                What is Your Average Electric Bill?
+              </h2>
+
+              <h4 class="sub-info">
+                Move the slider to indicate your monthly average electricity
+                bill amount
+              </h4>
+
+              <div class="form-ranger mx-auto">
+                <!-- <label for="customRange1" class="form-label">Example range</label> -->
+                <div class="range">
+                  <div class="range__content">
+                    <div class="range__slider">
+                      <div class="range__slider-line" id="range-line"></div>
+                    </div>
+
+                    <div class="range__thumb" id="range-thumb">
+                      <div class="range__value">
+                        <span class="range__value-number" id="range-number">
+                          <!-- Aqui va el indicador -->
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Input (range name: average electric bill) -->
+                    <input type="range" class="range__input" id="slider" min="50" max="800" value="425" step="1"
+                      name="average_electric_bill" />
+                  </div>
+                </div>
+
+                <div class="num-ranger">
+                  <div id="value_from_range" data-value="50" class="initial-num">
+                    $50
+                  </div>
+                  <div id="value_to_range" data-value="800" class="last-num">
+                    $800
+                  </div>
+                </div>
+
+                <button type="button" onclick="nextSlide()" id="btn_ranger_next"
+                  class="btn btn-submit max-120 mt-lg-nev-45">
+                  Next
+                </button>
+              </div>
+            </div>
+            <div class="text-copy">
+              <span class="d-block p-copy">
+                © 2023 Sunwise. All rights reserved.
+              </span>
+
+              <small class="d-block">
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  2023 Sunwise. All rights reserved.</a>
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  Privacy Policy.</a>
+
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  Terms</a>
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- * Cuarta sección (Email address) -->
+        <div class="swiper-slide">
+          <div class="container h-100 d-flex justify-content-between flex-column">
+            <div class="main-part">
+              <div class="index-navigation">
+                <div class="num text-white">3</div>
+              </div>
+
+              <h2 class="info mx-auto text-yellow fw-bolder">
+                Where Can We Send Your Free Solar Quote?
+                <div class="icon-telegram mt-3">
+                  <i class="fas fa-paper-plane tr-rotate-20 text-white fa-1x fs-sm-50"></i>
+                </div>
+              </h2>
+
+              <div class="form-email mt-3">
+                <div>
+                  <!-- Input (name: email-address)  -->
+                  <input id="email-address" type="email"
+                    class="form-control max-550 fw-500 w-75 search fs-24 fs-md-18 mx-auto rounded-0 text-center p-1 h-70px h-md-55"
+                    placeholder="Enter Your Email Address" name="email_address" />
+
+                  <button type="button" id="submit-email-address" class="btn btn-submit max-120 mt-3">
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="text-copy">
+              <span class="d-block p-copy">
+                © 2023 Sunwise. All rights reserved.
+              </span>
+
+              <small class="d-block">
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  2023 Sunwise. All rights reserved.</a>
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  Privacy Policy.</a>
+
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  Terms</a>
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- *Quinta seccion (Nombre y apellido) -->
+        <div class="swiper-slide">
+          <div class="container h-100 d-flex justify-content-between flex-column">
+            <div class="main-part mb-4">
+              <div class="index-navigation">
+                <div class="num text-white">4</div>
+              </div>
+
+              <h2 class="info mx-auto text-yellow fw-bolder">
+                Who Is This Quote For?
+              </h2>
+
+              <h4 class="sub-info">Please enter your first and last name</h4>
+
+              <div class="form-email mt-5">
+                <div>
+                  <!-- inputs (name: first Name) -->
+                  <input id="firs_name_text" type="email"
+                    class="form-control fw-500 active-blue max-550 w-75 search fs-24 fs-md-18 mx-auto rounded-0 text-center p-1 h-70px h-md-55"
+                    placeholder="Enter first Name" name="first_name" />
+
+                  <!-- inputs (name: last Name) -->
+                  <input id="last_name_text" type="email"
+                    class="form-control fw-500 active-blue max-550 w-75 search fs-24 fs-md-18 mx-auto rounded-0 text-center p-1 h-70px h-md-55"
+                    placeholder="Enter Last Name" name="last_name" />
+
+                  <button type="button" id="submit-name-text" class="btn btn-submit max-120 mt-1">
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="text-copy">
+              <span class="d-block p-copy">
+                © 2023 Sunwise. All rights reserved.
+              </span>
+
+              <small class="d-block">
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  2023 Sunwise. All rights reserved.</a>
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  Privacy Policy.</a>
+
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  Terms</a>
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- *Sexta numero telefonico -->
+        <div class="swiper-slide">
+          <div class="container h-100 d-flex flex-column justify-content-between">
+            <div class="main-part mb-lg-4">
+              <div class="index-navigation">
+                <div class="num text-white">5</div>
+              </div>
+
+              <h2 class="info mx-auto text-yellow fw-bolder">
+                Phone Number
+                <div class="icon-phone tr-rotate-360 mt-4">
+                  <i class="fas fa-phone text-white fa-1x fs-sm-50"></i>
+                </div>
+              </h2>
+
+              <div class="form-email mt-3">
+                <div>
+                  <!-- input (name: phone-number) -->
+                  <input id="phone-number" type="tel" name="phone_home" data-inputmask='"mask": "(999) 999-9999"'
+                    data-mask
+                    class="form-control fw-500 max-550 w-75 search fs-24 fs-md-18 mx-auto rounded-0 text-center p-1 h-70px h-md-55"
+                    placeholder="Enter Your Phone Number" />
+
+                  <small class="d-block text-grey fs-league fw-light fs-12 w-50 w-md-100 mx-auto">
+                    By clicking below, I authorize Sunwise to call me and send
+                    pre-recorded messages and text messages to me about
+                    Sunwise products and services at the telephone number I
+                    entered above, using an autodialer, even if I am on a
+                    national or state “Do Not Call” list. Message and data
+                    rates may apply. Maximum 10 texts per month. Consent for
+                    calls & texts is optional. You can opt out anytime. You
+                    also agree to our
+                  </small>
+
+                  <button type="button" id="submit-phone-number" class="btn btn-submit max-250 mt-4">
+                    Submit ▸
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-copy">
+              <span class="d-block p-copy">
+                © 2023 Sunwise. All rights reserved.
+              </span>
+
+              <small class="d-block">
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  2023 Sunwise. All rights reserved.</a>
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  Privacy Policy.</a>
+
+                <a href="#" class="text-white text-decoration-none copy-texto">
+                  Terms</a>
+              </small>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <div href="#" class="btn-fixed-home" onclick="prevSlide()">
-        <i class="fas fa-chevron-up"></i>
-      </div>
-    </form>
-  </body>
+    <div href="#" class="btn-fixed-home" onclick="prevSlide()">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+  </form>
+</body>
 
-  <!-- * jquery js -->
-  <script src="./assets/lib/jquery/jquery.min.js"></script>
+<!-- * jquery js -->
+<script src="./assets/lib/jquery/jquery.min.js"></script>
 
-  <!-- * swiper js -->
-  <script src="./assets/lib/swiperjs/swiper.min.js"></script>
+<!-- * swiper js -->
+<script src="./assets/lib/swiperjs/swiper.min.js"></script>
 
-  <!-- * bootstrap 5 -->
-  <script src="./assets/lib/bootstrap-5/bootstrap.min.js"></script>
+<!-- * bootstrap 5 -->
+<script src="./assets/lib/bootstrap-5/bootstrap.min.js"></script>
 
-  <!-- * bootstrap 5 -->
-  <script src="./assets/lib/inputmask/jquery.inputmask.min.js"></script>
-  <script src="./assets/lib/inputmask/inputmask.binding.js"></script>
+<!-- * bootstrap 5 -->
+<script src="./assets/lib/inputmask/jquery.inputmask.min.js"></script>
+<script src="./assets/lib/inputmask/inputmask.binding.js"></script>
 
-  <!-- * functions -->
-  <script src="./assets/js/functions.js"></script>
-  <!-- * main script -->
-  <script src="./assets/js/app.js"></script>
+<!-- * functions -->
+<script src="./assets/js/functions.js"></script>
+<!-- * main script -->
+<script src="./assets/js/app.js"></script>
+
 </html>
